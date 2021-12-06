@@ -14,6 +14,10 @@ function App() {
     console.log(food);
   }
 
+  const handleSideItem = (event) =>{ 
+    setFood({...food, [event.target.name]: !event.target.value})
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     setFoods([food, ...foods])
@@ -62,7 +66,7 @@ function App() {
           name="sideItem"
           checked={food.sideItem}
           value={food.sideItem}
-          onChange={(event) => setFood({...food, sideItem: !event.target.value})} 
+          onChange={handleSideItem} 
         />
         <br />
         
