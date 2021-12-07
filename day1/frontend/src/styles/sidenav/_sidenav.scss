@@ -1,0 +1,21 @@
+.sideNav {
+  background-color: rgb(39, 11, 105);
+  height: 100%;
+  min-height: 100vh;
+  top: 0;
+  
+  li {
+    padding-top: 20px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+  }
+
+  a, li {
+    color: white;
+    text-decoration: none;
+  }
+
+}
+
+  
